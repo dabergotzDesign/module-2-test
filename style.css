@@ -1,0 +1,154 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* /// IMAGES TASK /// */
+.images div,
+.images img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+  clear: both;
+}
+
+.background {
+  height: 200px;
+  width: 240px;
+  background-image: url(images/tree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+img[alt*="Image 2"] {
+  padding: 8px;
+  border: 2px solid blue;
+}
+
+/* /// Span TASK /// */
+div span:nth-child(even) {
+  background-color: gray;
+}
+
+/* /// Media Query TASK /// */
+@media only screen and (min-width: 5rem) {
+  /* mobile */
+  .mediaquery {
+    background-color: blue;
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablet */
+  .mediaquery {
+    background-color: yellow;
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Desktop */
+  .mediaquery {
+    background-color: red;
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* large Desktop */
+  .mediaquery {
+    background-color: purple;
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/* //// POSITIONING TASK //// */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+header {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* //// FLEXBOX TASK //// */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-items: center;
+}
+
+/* //// GRID TASK //// */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  border: 2px solid black;
+}
+
+.wrapper div {
+  border: 2px solid black;
+  margin: 8px;
+}
+
+/* cell sizing */
+.cell_two {
+  grid-row: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+
+.cell_three {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.cell_seven {
+  grid-column: span 2;
+}
+
+/* /// H3 TASK /// */
+.h3_image {
+  color: cyan;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.h3_span {
+  color: magenta;
+  font-size: 4em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.h3_flex {
+  color: darkorange;
+  font-size: 6em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer a:hover {
+  color: darkblue;
+}
+
+footer a:visited {
+  color: blueviolet;
+}
